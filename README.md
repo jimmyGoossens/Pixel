@@ -1,2 +1,2 @@
 # Pixel
-a project to improve or skills in programming
+a project to improve our skills in programming
