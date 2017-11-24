@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="https://use.fontawesome.com/7a8f184185.js"></script>
-  <title>Pin it</title>
-</head>
-<body>
+<?php
+// PHP code goes here
+?>
   <div class="mainPinIt">
     <div class="pinItBox">
       <section class="pinItBoxHeader">
@@ -28,5 +21,3 @@
       </section>
     </div>
   </div>
-</body>
-</html>
