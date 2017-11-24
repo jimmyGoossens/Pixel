@@ -1,6 +1,6 @@
 <div class="headerBox">
   <div class="mainHeader">
-    <img src="" alt="Logo" />
+    <img src="../Assets/Logo/logo.png" alt="Logo"class="logo-black" />
     <input type="text" placeholder="Search..."/>
     <nav class="headerNav">
       <div class="picAndName">
