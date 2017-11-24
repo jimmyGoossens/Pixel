@@ -1,6 +1,4 @@
-<?php
-// PHP code goes here
-?>
+
 
 <div class="container">
 <form>
@@ -9,9 +7,9 @@
 
 
   <h2 class="arago">Email Address</h2>
-<input type="text" name="email" placeholder="example@email.com">
+    <input type="text" name="email" placeholder="example@email.com">
   <h2 class="arago">Password</h2>
-<input type="password" name="password">
+   <input type="password" name="password">
 
   <a href=""><button type="button" value="Submit">Forgot your Password?</button></a>
 </form>

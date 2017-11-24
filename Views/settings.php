@@ -1,6 +1,4 @@
-<?php
-// PHP code goes here
-?>
+
 <!-- HEADER -->
 <div class="mainSettings">
   <form action="" method="post">

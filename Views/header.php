@@ -1,5 +1,3 @@
-<?php
-// PHP code goes here
 <div class="headerBox">
   <img src="" alt="Logo du site" />
   <input type="text" placeholder="Search..."/>
@@ -14,5 +12,3 @@
     <a href="">Log out</a>
   </nav>
 </div>
-
-?>

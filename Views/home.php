@@ -1,17 +1,4 @@
-<?php
-// PHP code goes here
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="style.css">
-    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
-  <title>Document</title>
-</head>
-<body>
+
 
 
   <div class="good">
@@ -25,6 +12,3 @@
 </form>
 
 </div>
-
-</body>
-</html>
