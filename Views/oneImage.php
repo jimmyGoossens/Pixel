@@ -8,7 +8,7 @@
 
       <!--Si c'est un admin, afficher ce bouton-->
       <?php
-      if(isset($_SESSION['admin']))
+      if($_SESSION['admin']==true)
       {
       ?>
       <div class="adminDeleteButton">
