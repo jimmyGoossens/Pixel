@@ -3,19 +3,12 @@
 	$bdd= new PDO('mysql:host=localhost;dbname=Pixel;charset=utf8','user','user');
 	require('class_PDO.php');
 	$home=new pdoModel($bdd);
-  
 
+  $reponse = $home->selectImage();
+
+    while ($donnees = $reponse->fetch()){
 ?>
-
-     <?php
-echo "yop";
-
-
-     /*
-            while ($donnees = $reponse->fetch()){
-          ?>
-          <li><?php echo $donnees['image'] ;?> </li>
-          <?php
-            }*/
-          ?>
-
+          <li><img  src= <?php echo $donnees['image'];?> alt=<?php echo $donnees['description'] ?>/></li>
+<?php
+    }
+?>    

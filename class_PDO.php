@@ -19,7 +19,6 @@ class pdoModel{
 					'password'=>$this->password
 
 				));   
-		
 	}
 
 	function select(){
@@ -37,16 +36,25 @@ class pdoModel{
 		return $donnees['ID'];
 	}
 
+	function selectImage() {
+
+		$this->img = $_POST['img'];
+		$req = $this->connexion->query('SELECT * FROM image');
+		return $req;
+	}
+
 }
-		/*function delete() {
+		function delete() {
 
-		$requete = $bdd->prepare('DELETE FROM user WHERE ');
+		$requete = $bdd->prepare('DELETE FROM image WHERE name=:img ');
 		$req->execute(array(
-
+				'img'=>$this->img
 		));
 
 
-	}function update(){
+	}
+/*
+	function update(){
 
 		$requete = $this->connexion->prepare('UPDATE user SET variable_à_changer WHERE id=id');
 		$req->execute(array(

@@ -15,8 +15,8 @@ if(isset($_POST['valider'])) {
 		echo "bordel";
 		session_start();
 		$_SESSION['id']= $validation;	    
-	 	//header('location:home.php');
-		echo $_SESSION['id'];
+	 	header('location:home.php');
+
 	}else{
 
 		echo "invalide user name or password";
