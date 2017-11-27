@@ -11,18 +11,35 @@ class Controller
         $this->pdoModel = new pdoModel();
     }
 
+    public function getWelcomePage()
+    {
+        require "Views/welcome.html";
+    }
     public function getRegisterPage()
     {
-        require "views/register.php";
+        require "Views/registerForm.html";
+    }
+    public function getLoginPage()
+    {
+        require "Views/loginForm.html";
     }
     public function getHomePage()
     {
-        require "views/home.php";
+        require "Views/home.html";
     }
     public function getaddAnImagePage()
     {
-        require "views/addAnImage.php";
+        require "Views/addAnImage.html";
     }
+    public function get404page()
+    {
+        require "Views/welcome.html";
+    }
+    public function administrateur()
+    {
+        require "Controller/admin.php"
+    }
+
 
     public function login($pseudo, $password)
     {
@@ -39,7 +56,8 @@ class Controller
     }
     public function upload()
     {
-        $this ->pdoModel->upload($image, $name, )
+        $this ->pdoModel->upload($image, $name);
+          header("location:index.php?action=UserController@getSignup");
     }
 
 }

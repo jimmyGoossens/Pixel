@@ -1,8 +1,8 @@
 <?php
 // require '';
-require 'Controller/Controller.php';
-require 'Model/pdoModel.php';
-$Usercontroller = new UserController();
+require 'Controller/controller.php';
+require 'Model/class_PDO.php';
+$Usercontroller = new Controller();
 $action = "";
 
 ?>
@@ -22,22 +22,28 @@ $action = "";
   <body>
 
 <?php
-extract($_POST);
-extract($_GET);
+
+require "Controller/controller.php";
+
+$controller = new Controller;
 
 switch ($action) {
-    case 'UserController@login':
-        $Usercontroller->login($pseudo, $password);
+    case 'getWelcomePage':
+      $controller->getWelcomePage();
+      break;
+    case 'getRegisterPage':
+        $controller->getRegisterPage();
         break;
-    case 'UserController@register':
-        $Usercontroller->register($pseudo, $password, $email);
-        break;
-    case 'UserController@getHome':
-        $Usercontroller->getHomePage();
-        break;
-    case 'UserController@getaddAnImagePage':
-        $Usercontroller->getaddAnImagePage();
-        break;
+    case 'getLoginFormPage':
+        $controller->getLoginFormPage();
+      break;
+    case 'getHomePage':
+       $controller->getHomePage();
+      break;
+    case 'getaddAnImagePage':
+      $controller->getaddAnImagePage();
+      break;
+    default $controller->get404Page();
 }
  ?>
 </body>

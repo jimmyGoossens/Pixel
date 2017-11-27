@@ -1,9 +1,10 @@
 <?php
 	if(isset($_POST['supprimer'])) {
 
-		require("class_PDO.php");
+		require("model/class_PDO.php");
 		$del=new pdoModel($bdd);
 		$_POST['imgName'];
 		$del->delete();
+		header("location:index.php?action=UserController@getSignup");
 	}
 ?>

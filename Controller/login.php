@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <?php
 
@@ -14,20 +15,42 @@ if(isset($_POST['valider'])) {
 
 if(isset($_POST['valider'])){
 >>>>>>> origin
+=======
+
+
+
+
+<?php
+
+if(isset($_POST['valider'])){
+
+>>>>>>> bc2db1574fddb4da13e284e69e867629a8c9cd04
 
 	$bdd= new PDO('mysql:host=localhost;dbname=Pixel;charset=utf8','user','user');
 	require('class_PDO.php');
 	$login = new pdoModel($bdd);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> bc2db1574fddb4da13e284e69e867629a8c9cd04
 
 	$validation = $login->select();
 	echo $validation;
 
+<<<<<<< HEAD
 	
 	if(!empty($validation)){
 		echo "bordel";
 		session_start();
 		$_SESSION['id']= $validation;	    
+=======
+
+	if(!empty($validation)){
+		echo "bordel";
+		session_start();
+		$_SESSION['id']= $validation;
+>>>>>>> bc2db1574fddb4da13e284e69e867629a8c9cd04
 	 	header('location:home.php');
 
 	}else{
@@ -38,6 +61,7 @@ if(isset($_POST['valider'])){
 }
 
 ?>
+<<<<<<< HEAD
 <form  action="login.php" method="post" >
 =======
 	echo "yop";
@@ -87,3 +111,5 @@ echo $validation;
 </body>
 </html>
 >>>>>>> origin
+=======
+>>>>>>> bc2db1574fddb4da13e284e69e867629a8c9cd04
