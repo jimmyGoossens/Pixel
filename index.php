@@ -1,6 +1,6 @@
 <?php
 // require '';
-require 'Controller/Controller.php';
+require 'Controller/controller.php';
 require 'Model/pdoModel.php';
 $Usercontroller = new UserController();
 $action = "";
@@ -8,6 +8,7 @@ $action = "";
 ?>
 
 <!DOCTYPE html>
+<!-- mettre dans un fichier header et l'include -->
 <html>
   <head>
     <meta charset="utf-8">

@@ -39,7 +39,7 @@ class UserController
     }
     public function upload()
     {
-        $this ->pdoModel->upload($image, $name, )
+        $this ->pdoModel->upload($image, $name);
     }
 
 }
