@@ -1,6 +1,4 @@
-<?php
-// PHP code goes here
-?>
+
 
 <div class="main">
   <h1>Add an image</h1>

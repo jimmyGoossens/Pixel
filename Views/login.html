@@ -1,6 +1,4 @@
-<?php
-// PHP code goes here
-?>
+
 <div class="container">
 <form>
   <h1>Login</h1>

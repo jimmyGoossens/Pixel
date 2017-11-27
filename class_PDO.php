@@ -19,6 +19,10 @@ class pdoModel{
 					'password'=>$this->password
 
 				));   
+<<<<<<< HEAD
+=======
+		
+>>>>>>> origin
 	}
 
 	function select(){
@@ -36,6 +40,7 @@ class pdoModel{
 		return $donnees['ID'];
 	}
 
+<<<<<<< HEAD
 	function selectImage() {
 
 		$this->img = $_POST['img'];
@@ -72,6 +77,18 @@ class pdoModel{
 }
 /*
 	function update(){
+=======
+}
+		/*function delete() {
+
+		$requete = $bdd->prepare('DELETE FROM user WHERE ');
+		$req->execute(array(
+
+		));
+
+
+	}function update(){
+>>>>>>> origin
 
 		$requete = $this->connexion->prepare('UPDATE user SET variable_à_changer WHERE id=id');
 		$req->execute(array(
