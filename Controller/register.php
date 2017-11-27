@@ -2,11 +2,11 @@
 
 
 if(isset($_POST['valider'])){
-	
+
 	$bdd= new PDO('mysql:host=localhost;dbname=Pixel;charset=utf8','user','user');
 	require('class_PDO.php');
 	$register = new pdoModel($bdd);
-<<<<<<< HEAD
+
 	$existence=$register->select();
 	if($_POST['password']==$_POST['mdp2'] AND empty($existence)){
 
@@ -15,22 +15,21 @@ if(isset($_POST['valider'])){
 		session_start();
 		$_SESSION['id']= $register->select();
 		header('location:home.php');
-		
+
 	}
 	else{
 
 		echo "incorrect password or existing profile";
 	}
-=======
+
 	$register->insert($bdd);
 
 	//start sesssion
 	$__SESSION['id']= $register->select();
 	echo $register->select();
-	
+
 	//header('location:home.php');
 
->>>>>>> origin
 }
 
 ?>
@@ -44,11 +43,10 @@ if(isset($_POST['valider'])){
     <input type="text" name="password" id="mdp1" placeholder="motdepasse"></br>
 
     <label for="motdepasse2"> confirmez le mot de passe :</label></br>
-<<<<<<< HEAD
+
     <input type="text" name="mdp2" id="mdp2" placeholder="motdepasse"></br>
-=======
     <input type="text" name="motdepasse2" id="mdp2" placeholder="motdepasse"></br>
->>>>>>> origin
+
 
     <label for="email"> inserez  une adresse e-mail :</label></br>
     <input type="text" name="mail" id="email" placeholder="email"></br>

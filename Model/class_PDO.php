@@ -1,6 +1,6 @@
 <?php
 class pdoModel{
-	
+
 	private $connexion;
 	public function __construct($bd){
 	$this->connexion=$bd;
@@ -18,15 +18,12 @@ class pdoModel{
 					'mail'=>$this->mail,
 					'password'=>$this->password
 
-				));   
-<<<<<<< HEAD
-=======
-		
->>>>>>> origin
+				));
+
 	}
 
 	function select(){
-		
+
 		$this->name = $_POST['name'];
 		$this->password = $_POST['password'];
 
@@ -40,7 +37,7 @@ class pdoModel{
 		return $donnees['ID'];
 	}
 
-<<<<<<< HEAD
+
 	function selectImage() {
 
 		$this->img = $_POST['img'];
@@ -76,8 +73,7 @@ class pdoModel{
 	  }
 }
 /*
-	function update(){
-=======
+	function update()
 }
 		/*function delete() {
 

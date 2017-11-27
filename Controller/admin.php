@@ -5,5 +5,6 @@
 		$del=new pdoModel($bdd);
 		$_POST['imgName'];
 		$del->delete();
+		header("location:index.php?action=UserController@getSignup");
 	}
 ?>

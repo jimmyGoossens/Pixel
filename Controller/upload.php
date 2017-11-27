@@ -3,11 +3,6 @@
 /**
  * Partie qui va gérer la reception des image après upload
  */
-<<<<<<< HEAD
- 
-=======
-
->>>>>>> ornella
 
 if(!empty($_FILES)){
 $img = $_FILES['img'];
