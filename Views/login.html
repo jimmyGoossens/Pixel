@@ -1,13 +1,12 @@
-
 <div class="container">
-<form action="login.php" method="post">
   <h1>Login</h1>
-  <h2>Email Address</h2>
-<input type="text" name="email" placeholder="example@email.com">
-  <h2>Password</h2>
-<input type="password" name="password">
-
-  <input type="submit" name="valider">
-</form>
-
+  <form action="../Controller/login.php" method="post" onsubmit="return checkLogInForm(this)">
+    <h2>Email Address</h2>
+    <input type="text" name="email" placeholder="example@email.com" onblur="checkEmail(this)">
+    <div id="emailError"></div>
+    <h2>Password</h2>
+    <input type="password" name="password">
+    <input type="submit" name="valider">
+  </form>
 </div>
+<script type="text/javascript" src="../Assets/js/app.js"></script>
