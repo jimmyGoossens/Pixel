@@ -1,12 +1,11 @@
-
-
 <div class="main">
   <h1>Add an image</h1>
   <div class="mainContent">
-    <form class="addAnImage" action="" method="post" enctype="multipart/form-data">
+    <form class="addAnImage" action="../Controller/upload.php" method="post" enctype="multipart/form-data" onsubmit="return checkAddImageForm(this)">
       <div class="imageTitle">
         <label for="imageTitle">Title : </label>
-        <input type="text" name="imageTitle" id="imageTitle"/>
+        <input type="text" name="imageTitle" id="imageTitle" onblur="checkTitle(this)"/>
+        <div id="titleError"></div>
       </div>
       <div class="imageText">
         <label for="imageText">Text : </label>
@@ -24,3 +23,4 @@
     </form>
   </div>
 </div>
+<script type="text/javascript" src="../Assets/js/app.js"></script>

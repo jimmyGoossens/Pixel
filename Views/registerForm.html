@@ -1,25 +1,19 @@
-<?php
-include('register.php');
-?>
 <div class="dark">
-<form  action="register.php" method="post" >
   <h1>Register</h1>
-
- <h2>Your Name</h2>
-<input type="text" name="yourname" autofocus>
-
-<h2>Email Address</h2>
-<input type="text" name="email" placeholder="example@email.com">
-
-<h2>Password</h2>
-<input type="password" name="password">
-
-<h2>confirm password</h2>
-<input type="password" name="mdp2">
-
-
+  <form onsubmit="return checkRegisterForm(this)"  action="../Controller/register.php" method="post" >
+    <h2>Your Name</h2>
+    <input type="text" name="name" onblur="checkName(this)" autofocus>
+    <div id="nameError"></div>
+    <h2>Email Address</h2>
+    <input type="text" name="email" onblur="checkEmail(this)" placeholder="example@email.com">
+    <div id="emailError"></div>
+    <h2>Password</h2>
+    <input type="password" id="password1" name="password1" onblur="checkPass(this)">
+    <div id="pass1Error"></div>
+    <h2>confirm password</h2>
+    <input type="password" name="password2" id="password2" onblur="checkMatchPass('password1', 'password2')">
+    <div id="pass2Error"></div>
     <input type="submit" name="valider" class="tutu">
-  
-</form>
-
+  </form>
 </div>
+<script type="text/javascript" src="../Assets/js/app.js"></script>
