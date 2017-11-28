@@ -1,0 +1,726 @@
+/* ----------------------------------------------- */
+/*Ok Lets's Go*/
+/* ----------------------------------------------- */
+
+body{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family:'Lato', 'Arial', sans-serif;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+
+
+
+
+
+/* ----------------------------------------------- */
+/* Home.php*/
+/* ----------------------------------------------- */
+
+
+.black{
+  margin: 20px;
+  padding: 0;
+  border: 0;
+}
+
+p{
+  font-size: 10px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.tutu{
+  color: #4A8DCA;
+  text-decoration: none;
+}
+
+.tutu:hover{
+  text-decoration: underline;
+}
+
+.good{
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  padding: 40px 50px 40px 50px;
+}
+
+
+
+form h1{
+  font-size: 50px;
+  font-weight: 300;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: none;
+}
+
+form h2{
+  color: #444;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+form input{
+  border: 2px solid #ddd;
+  border-radius: 3px;
+  color: #888;
+  display: block;
+  font-size: 12px;
+  margin-bottom: 30px;
+  padding: 0px 10px;
+  height: 35px;
+  width: 250px;
+}
+
+form input:focus{
+  outline: none;
+  border-color: #ccc;
+}
+
+::-webkit-input-placeholder {
+  color: #bbb;
+  font-size: 10px;
+  line-height: 16px;
+}
+
+form label{
+  display: inline-block;
+}
+
+form button{
+  background-color:#e67e22;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 20px;
+  font-weight:700;
+  letter-spacing: .5px;
+  height: 50px;
+  width: 270px;
+  margin-bottom: 20px;
+  -webkit-transition: all 400ms ease;
+          transition: all 400ms ease;
+}
+
+form button:focus{
+  outline: none;
+}
+
+form button:hover{
+  background-color: blue;
+
+
+
+
+/* ----------------------------------------------- */
+/* login.php*/
+/* ----------------------------------------------- */
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+p{
+  font-size: 10px;
+  font-weight: 400;
+  text-align: center;
+}
+
+a{
+  color: #4A8DCA;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.container{
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  padding: 40px 50px 40px 50px;
+  box-shadow: 1px 3px 0px #2d7baf;
+}
+
+form h1{
+  font-size: 50px;
+  font-weight: 300;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: none;
+}
+
+form h2{
+  color: #444;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+form input{
+  border: 2px solid #ddd;
+  border-radius: 3px;
+  color: #888;
+  display: block;
+  font-size: 12px;
+  margin-bottom: 30px;
+  padding: 0px 10px;
+  height: 35px;
+  width: 250px;
+}
+
+form input:focus{
+  outline: none;
+  border-color: #ccc;
+}
+
+::-webkit-input-placeholder {
+  color: #bbb;
+  font-size: 10px;
+  line-height: 16px;
+}
+
+form label{
+  display: inline-block;
+}
+
+form button{
+  background-color:#e67e22;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 20px;
+  font-weight:700;
+  letter-spacing: .5px;
+  height: 50px;
+  width: 270px;
+  margin-bottom: 20px;
+  -webkit-transition: all 400ms ease;
+          transition: all 400ms ease;
+}
+
+form button:focus{
+  outline: none;
+}
+
+form button:hover{
+  background-color: blue;
+}
+
+
+/* ----------------------------------------------- */
+/* Register*/
+/* ----------------------------------------------- */
+.fuck{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+p{
+  font-size: 10px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.tutu{
+  color: #4A8DCA;
+  text-decoration: none;
+}
+
+.tutu:hover{
+  text-decoration: underline;
+}
+
+.dark{
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  padding: 40px 50px 40px 50px;
+}
+
+form h1{
+  font-size: 50px;
+  font-weight: 300;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: none;
+}
+
+form h2{
+  color: #444;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+form input{
+  border: 2px solid #ddd;
+  border-radius: 3px;
+  color: #888;
+  display: block;
+  font-size: 12px;
+  margin-bottom: 30px;
+  padding: 0px 10px;
+  height: 35px;
+  width: 250px;
+}
+
+form input:focus{
+  outline: none;
+  border-color: #ccc;
+}
+
+::-webkit-input-placeholder {
+  color: #bbb;
+  font-size: 10px;
+  line-height: 16px;
+}
+
+form label{
+  display: inline-block;
+}
+
+form button{
+  background-color:#e67e22;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 20px;
+  font-weight:700;
+  letter-spacing: .5px;
+  height: 50px;
+  width: 270px;
+  margin-bottom: 20px;
+  -webkit-transition: all 400ms ease;
+          transition: all 400ms ease;
+}
+
+form button:focus{
+  outline: none;
+}
+
+form button:hover{
+  background-color: blue;
+}
+
+/* ----------------------------------------------- */
+/* createaboard.php*/
+/* ----------------------------------------------- */
+
+form {
+  position:relative;
+  width:340px;
+  height:250px;
+  margin:200px auto;
+  text-align:center;
+  background:#ecf0f1;
+  padding:100px;
+  -webkit-border-radius:6px;
+     -moz-border-radius:6px;
+          border-radius:6px;
+  -webkit-box-shadow: 0px 1px 0px #ad392d, inset 0px 1px 0px white;
+     -moz-box-shadow: 0px 1px 0px #ad392d, inset 0px 1px 0px white;
+          box-shadow: 0px 1px 0px #ad392d, inset 0px 1px 0px white;
+}
+
+.cheers {
+  font:2em 'Open Sans';
+  font-weight:300;
+  margin-bottom:25px;
+  color:#7f8c8d;
+  text-shadow:1px 1px 0px white;
+}
+
+input {
+  display:block;
+  width:315px;
+  padding:14px;
+  -webkit-border-radius:6px;
+     -moz-border-radius:6px;
+          border-radius:6px;
+  border:0;
+  margin-bottom:10px;
+  color:#7f8c8d;
+  outline:none;
+  font-weight:600;
+}
+
+input:focus {
+  background:#fafafa;
+}
+
+::-webkit-input-placeholder {
+  color: #95a5a6;
+  font-weight:300;
+}
+
+:-moz-placeholder {
+  color: #95a5a6;
+  font-weight:300;
+}
+
+::-moz-placeholder {
+  color: #95a5a6;
+  font-weight:300;
+}
+
+:-ms-input-placeholder {
+  color: #95a5a6;
+  font-weight:300;
+}
+
+li {
+  position:absolute;
+  right:40px;
+  bottom:62px;
+  list-style:none;
+}
+
+a, a:visited {
+  text-decoration:none;
+  color:#7f8c8d;
+  font-weight:400;
+  text-shadow:1px 1px 0px white;
+  -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+          transition: all .3s ease-in-out;
+}
+
+a:hover {
+  color:#e67e22;
+  -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+          transition: all .3s ease-in-out;
+}
+
+.sub {
+  position:relative;
+  float:left;
+  width:150px;
+  margin-top:10px;
+  background:#e67e22;
+  color:#fff;
+  font-weight:400;
+  text-shadow:2px 1px 0px #2d7baf;
+  box-shadow:2px 3px 0px #2d7baf;
+  -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+          transition: all .3s ease-in-out;
+}
+
+.sub:hover {
+  background:blue;
+  cursor:pointer;
+  -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+          transition: all .3s ease-in-out;
+}
+
+.sub:active {
+  box-shadow:none;
+  top:4px;
+  -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+          transition: all .3s ease-in-out;
+}
+
+/* ----------------------------------------------- */
+/* incorrectpassword.php*/
+/* ---------------------------------------------- */
+
+.arago{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+p{
+  font-size: 10px;
+  font-weight: 400;
+  text-align: center;
+}
+
+a{
+  color: #4A8DCA;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.container{
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  padding: 40px 50px 40px 50px;
+  box-shadow: 1px 3px 0px #2d7baf;
+}
+
+form h1{
+  font-size: 50px;
+  font-weight: 300;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: none;
+}
+
+form h2{
+  color: #444;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+form input{
+  border: 2px solid #ddd;
+  border-radius: 3px;
+  color: #888;
+  display: block;
+  font-size: 12px;
+  margin-bottom: 30px;
+  padding: 0px 10px;
+  height: 35px;
+  width: 250px;
+}
+
+form input:focus{
+  outline: none;
+  border-color: #ccc;
+}
+
+::-webkit-input-placeholder {
+  color: #bbb;
+  font-size: 10px;
+  line-height: 16px;
+}
+
+form label{
+  display: inline-block;
+}
+
+form button{
+  background-color:#e67e22;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 20px;
+  font-weight:700;
+  letter-spacing: .5px;
+  height: 50px;
+  width: 270px;
+  margin-bottom: 20px;
+  -webkit-transition: all 400ms ease;
+          transition: all 400ms ease;
+}
+
+form button:focus{
+  outline: none;
+}
+
+form button:hover{
+  background-color: blue;
+}
+
+
+/* ----------------------------------------------- */
+/* 404.php*/
+/* ----------------------------------------------- */
+.main404{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dude {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotateZ(20deg);
+  font-size: 200px;
+  font-weight: 800;
+  text-shadow: #e67e22 30px 30px,
+    rgb(180, 59, 47) 2px 2px,
+    rgb(180, 59, 47) 3px 3px,
+    rgb(180, 59, 47) 4px 4px,
+    rgb(180, 59, 47) 5px 5px,
+    rgb(180, 59, 47) 6px 6px,
+    rgb(180, 59, 47) 7px 7px,
+    rgb(180, 59, 47) 8px 8px,
+    rgb(181, 59, 47) 9px 9px,
+    rgb(182, 59, 47) 10px 10px,
+    rgb(183, 60, 47) 11px 11px,
+    rgb(184, 60, 48) 12px 12px,
+    rgb(185, 60, 48) 13px 13px,
+    rgb(186, 61, 48) 14px 14px,
+    rgb(187, 61, 48) 15px 15px,
+    rgb(188, 61, 49) 16px 16px,
+    rgb(189, 62, 49) 17px 17px,
+    rgb(190, 62, 49) 18px 18px,
+    rgb(191, 62, 49) 19px 19px,
+    rgb(192, 63, 50) 20px 20px,
+    rgb(193, 63, 50) 21px 21px,
+    rgb(194, 63, 50) 22px 22px,
+    rgb(195, 64, 51) 23px 23px,
+    rgb(197, 64, 51) 24px 24px,
+    rgb(198, 65, 51) 25px 25px,
+    rgb(199, 65, 51) 26px 26px,
+    rgb(200, 65, 52) 27px 27px,
+    rgb(201, 66, 52) 28px 28px,
+    rgb(202, 66, 52) 29px 29px,
+    rgb(203, 66, 52) 30px 30px,
+    rgb(204, 67, 53) 31px 31px,
+    rgb(205, 67, 53) 32px 32px,
+    rgb(206, 67, 53) 33px 33px,
+    rgb(207, 68, 54) 34px 34px,
+    rgb(208, 68, 54) 35px 35px,
+    rgb(209, 68, 54) 36px 36px,
+    rgb(210, 69, 54) 37px 37px,
+    rgb(211, 69, 55) 38px 38px,
+    rgb(212, 69, 55) 39px 39px,
+    rgb(214, 70, 55) 40px 40px,
+    rgb(215, 70, 55) 41px 41px,
+    rgb(216, 71, 56) 42px 42px,
+    rgb(217, 71, 56) 43px 43px,
+    rgb(218, 71, 56) 44px 44px,
+    rgb(219, 72, 57) 45px 45px,
+    rgb(220, 72, 57) 46px 46px,
+    rgb(221, 72, 57) 47px 47px,
+    rgb(222, 73, 57) 48px 48px,
+    rgb(223, 73, 58) 49px 49px,
+    rgb(224, 73, 58) 50px 50px,
+    rgb(225, 74, 58) 51px 51px,
+    rgb(226, 74, 58) 52px 52px,
+    rgb(227, 74, 59) 53px 53px,
+    rgb(228, 75, 59) 54px 54px,
+    rgb(229, 75, 59) 55px 55px,
+    rgb(231, 76, 60) 56px 56px;
+}
+
+.dude::after {
+  display: block;
+  content: 'Sorry, but the page you were trying to view does not exist.';
+  font: 600 21px/1.8 'Work Sans', sans-serif;
+  text-shadow: rgb(180, 59, 47) 1px 1px,
+    rgb(180, 59, 47) 2px 2px,
+    rgb(180, 59, 47) 3px 3px,
+    rgb(180, 59, 47) 4px 4px,
+    rgb(180, 59, 47) 5px 5px,
+    rgb(180, 59, 47) 6px 6px;
+}
+
+
+/* ----------------------------------------------- */
+/* Caro*/
+/* ----------------------------------------------- */
+
+/*HEADER*/
+.headerBox{
+  width: 100%;
+  height: 10vh;
+  background-color: silver;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.mainHeader{
+  display: flex;
+  font-size: 1.8em;
+  padding: 3vh 0 0 0;
+}
+.mainHeader img {
+  width: 40px;
+  height: 40px;
+}
+.headerNav{
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  width: 50%;
+  margin-left: -20px;
+}
+.headerNav a {
+  color: #e67e22;
+}
+.headerNav a:hover{
+  color: blue;
+}
+.picAndName{
+  display: flex;
+}
+.picAndName img {
+  border-radius: 5px;
+}
+.picAndName div {
+  margin-left: -30px;
+}
+.mainHeader img{
+  border: solid black 1px;
+  border-radius: 50%;
+  margin: 0 40px 0 50px;
+}
+.mainHeader input{
+  width: 40%;
+  font-size: 0.9em;
+}
+
+/*SETTINGS*/
+.mainSettings{
+  width: 100%;
+  font-size: 2em;
+  line-height: 70px;
+}
+.personalInfo{
+  width: 50%;
+  margin: auto;
+  padding-top: 25vh;
+}
+.personalInfo div input{
+  float: right;
+  height: 35px;
+  padding-right: 20%;
+}
+.buttonsSettingsPage{
+  width: 30%;
+  float: right;
+  margin-top: 10vh;
+}
+.buttonsSettingsPage input{
+  width: 150px;
+  height: 50px;
+  font-size: 0.8em;
+  color: #fff;
+  border-radius: 5px;
+}
+.buttonsSettingsPage input:hover{
+  background-color: blue;
+  font-size: 0.9em;
+}
+.save{
+  background-color: #e67e22;
+}
+#newProfilePic {
+  padding-right: 10%;
+}
+
+
+/* ----------------------------------------------- */
+/* logo*/
+/* ----------------------------------------------- */
+
+
+.logo-black {
+    display: left;
+    height: 150px;
+    width: auto;
+    float: left;
+    margin: 5px 0;
+    color: blue;
+}

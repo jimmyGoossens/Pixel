@@ -1,6 +1,6 @@
 <?php
 
-	$bdd= new PDO('mysql:host=localhost;dbname=Pixel;charset=utf8','user','user');
+	global $bdd;
 	require('class_PDO.php');
 	$home=new pdoModel($bdd);
 
@@ -11,4 +11,3 @@
           <li><img  src= <?php echo $donnees['image'];?> alt=<?php echo $donnees['description'] ?>/></li>
 <?php
     }
-?>

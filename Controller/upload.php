@@ -4,7 +4,6 @@
  * Partie qui va gérer la reception des image après upload
  */
 
-
 if(!empty($_FILES)){
 $img = $_FILES['img'];
 $extensions= strtolower(substr($img['name'], -3));
