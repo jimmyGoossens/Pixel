@@ -14,16 +14,16 @@
       <form  action="index.php?action=getRegisterUser" method="post" >
         <h1>Register</h1>
          <h2>Your Name</h2>
-      <input type="text" name="yourname" autofocus>
+      <input type="text" name="yourname" onblur="checkName(this)" autofocus>
         <h2>Email Address</h2>
-    <input type="text" name="email" placeholder="example@email.com">
+    <input type="text" name="email" onblur="checkEmail(this)" placeholder="example@email.com">
         <h2>Password</h2>
-    <input type="password" name="password">
+    <input type="password" name="password" onblur="checkPass(this)">
         <h2>confirm password</h2>
-    <input type="password" name="mdp2">
+    <input type="password" name="mdp2" onblur="checkMatchPass('password1', 'password2')">
     <input type="submit" name="valider" class="tutu">
-
       </form>
     </div>
+    <script type="text/javascript" src="../Assets/js/app.js"></script>
   </body>
     </html>

@@ -11,18 +11,17 @@
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <div class="container">
+  <div class="container">
 
-    <form action="index.php?action=getLoginUser" method="post">
+    <form action="index.php?action=getLoginUser" method="post" onsubmit="return checkLogInForm(this)">
       <h1>Login</h1>
       <h2>Email Address</h2>
-    <input type="text" name="email" placeholder="example@email.com">
+    <input type="text" name="email" placeholder="example@email.com" onblur="checkEmail(this)">
       <h2>Password</h2>
     <input type="password" name="password">
-
-      <input type="submit" name="valider">
+    <input type="submit" name="valider">
     </form>
-
-    </div>
+  </div>
+  <script type="text/javascript" src="../Assets/js/app.js"></script>
   </body>
     </html>
