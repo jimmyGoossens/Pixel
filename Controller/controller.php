@@ -17,7 +17,7 @@ class Controller
     }
     public function getHomePage()
     {
-        require "Views/home.html";
+        require "Views/home.php";
     }
     public function getaddAnImagePage()
     {
@@ -41,27 +41,23 @@ class Controller
     }
     public function getaddAnImageUser()
     {
-        require "Controller/upload.php";
+        $connectDB= new pdoModel;
+        $connectDB->upload();
     }
 
-    public function login($pseudo, $password)
-    {
-        if ($this->pdoModel->select($pseudo, $password)) {
-            header("location:index.php?action=getRegisterUser");
-        } else {
-            header("location:index.php?action=getWelcomePage");
-        }
-    }
-    public function register($pseudo, $password, $email)
-    {
-        $this->pdoModel->insert($pseudo, $password, $email);
-        header("location:index.php?action=getRegisterPage");
-    }
-    public function upload()
-    {
-        $this ->pdoModel->upload($image, $name);
-
-    }
+    // public function login($pseudo, $password)
+    // {
+    //     if ($this->pdoModel->select($pseudo, $password)) {
+    //         header("location:index.php?action=getRegisterUser");
+    //     } else {
+    //         header("location:index.php?action=getWelcomePage");
+    //     }
+    // }
+    // public function register($pseudo, $password, $email)
+    // {
+    //     $this->pdoModel->insert($pseudo, $password, $email);
+    //     header("location:index.php?action=getRegisterPage");
+    // }
 
 }
 

@@ -6,7 +6,6 @@ include 'Views/head.html';
 require 'model/class_PDO.php';
 require 'Controller/controller.php';
 
-$bdd= new PDO('mysql:host=localhost;dbname=imagePixel;charset=utf8','root','user');
 
 $controller = new Controller();
 if(!isset ($_GET['action'])){
@@ -37,6 +36,9 @@ switch ($action) {
      break;
     case 'getRegisterUser':
      $controller->getRegisterUser();
+        break;
+    case 'getaddAnImageUser':
+     $controller->getaddAnImageUser();
         break;
 }
  ?>

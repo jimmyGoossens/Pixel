@@ -4,8 +4,9 @@ class pdoModel{
 
 	private $connexion;
 
-	public function __construct($bd){
-	$this->connexion=$bd;
+	public function __construct(){
+	$this->connexion = new PDO('mysql:host=localhost;dbname=imagePixel;charset=utf8','root','user');
+	$this->connexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	}
 
 	function insert(){
@@ -14,10 +15,10 @@ class pdoModel{
 		$this->password = $_POST['password'];
 		$this->mail=$_POST['email'];
 
-		$req = $this->connexion->prepare('INSERT INTO user (name,mail,password) VALUES (:name,:mail,:password)');
+		$req = $this->connexion->prepare('INSERT INTO membre (name,mail,password) VALUES (:name,:mail,:password)');
 		$req->execute(array(
 				'name'=>$this->name,
-				'mail'=>$this->mail,
+				'email'=>$this->mail,
 				'password'=>$this->password
 
 			));
@@ -41,7 +42,7 @@ class pdoModel{
 	function selectImage() {
 
 		//$this->img = $_POST['img'];
-		$req = $this->connexion->query('SELECT * FROM image');
+		$req = $this->connexion->query('SELECT * FROM images');
 		return $req;
 		echo "nice";
 	}
@@ -49,7 +50,7 @@ class pdoModel{
 
 	function delete() {
 
-		$requete = $bdd->prepare('DELETE FROM image WHERE name=:img ');
+		$requete = $bdd->prepare('DELETE FROM images WHERE name=:img ');
 		$req->execute(array(
 				'img'=>$this->img
 		));
@@ -59,21 +60,23 @@ class pdoModel{
 	 function upload() {
 
 		if(!empty($_FILES)){
-			$img = $_FILES['img'];
+			$img = $_FILES['imageFile'];
 			$extensions= strtolower(substr($img['name'], -3));
 			$extensions_valides = array( 'jpg' , 'gif' , 'png' );
 			if (in_array($extensions,$extensions_valides)) {
-			  $this->$newId= md5(uniqid(rand(), true));
-			  $this->$chemin = move_uploaded_file($img['tmp_name'], "images/". $img['name'].$newId);
+			  $newId= md5(uniqid(rand(), true));
+			  move_uploaded_file($img['tmp_name'], "images/".$newId. $img['name']);
+				$chemin = "images/".$newId. $img['name'];
+				var_dump($_POST);
 
-			  $this->title=$_POST['imageTitle'];
-			$this->description=$_POST['imageText'];
-			$req = $this->connexion->prepare('INSERT INTO images(chemin,imageTitle,imageText) VALUES (:chemin,:imageTitle,:imageText)');
+			$title=$_POST['imageTitle'];
+			$description=$_POST['imageText'];
+			$req = $this->connexion->prepare('INSERT INTO images(chemin,imageTitles,imageText) VALUES (:chemin,:imageTitles,:imageText)');
 			$req->execute(array(
 
-				'chemin'=>$this->chemin,
-				'imageTitle'=>$this->title,
-				'imageText'=>$this->description
+				'chemin'=>$chemin,
+				'imageTitles'=>$title,
+				'imageText'=>$description
 
 				));
 			  echo "transfert reussi !";
