@@ -11,32 +11,33 @@ class pdoModel{
 
 	function insert(){
 
-		$this->name = $_POST['yourname'];
-		$this->password = $_POST['password'];
-		$this->mail=$_POST['email'];
+		$name = $_POST['yourname'];
+		$password = $_POST['password'];
+		$mail=$_POST['email'];
 
-		$req = $this->connexion->prepare('INSERT INTO membre (name,mail,password) VALUES (:name,:mail,:password)');
+		$req = $this->connexion->prepare('INSERT INTO membre (name,email,password) VALUES (:name,:email,:password)');
 		$req->execute(array(
-				'name'=>$this->name,
-				'email'=>$this->mail,
-				'password'=>$this->password
+				'name'=>$name,
+				'email'=>$mail,
+				'password'=>$password
 
 			));
 	}
 
 	function select(){
 
-		$this->name = $_POST['yourname'];
-		$this->password = $_POST['password'];
+		$email = $_POST['email'];
+		$password = $_POST['password'];
 
-		$req = $this->connexion->prepare('SELECT ID FROM user WHERE name =:name AND password =:password');
+		$req = $this->connexion->prepare('SELECT id FROM membre WHERE email =:email AND password =:password');
 		$req->execute(array(
-				'password'=>$this->password,
-				'name'=>$this->name
+				'password'=>$password,
+				'email'=>$email
 			));
 		$donnees=$req->fetch();
 
-		return $donnees['ID'];
+		return $donnees['id'];
+
 	}
 
 	function selectImage() {

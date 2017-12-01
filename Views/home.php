@@ -1,5 +1,5 @@
 <?php
-
+// include 'head.php';
 	global $bdd;
 	// require 'model/class_PDO.php';
 	$home=new pdoModel($bdd);
@@ -8,23 +8,22 @@
 
     while ($donnees = $reponse->fetch()){
 ?>
-          <li><img  src= <?php echo $donnees['image'];?> alt=<?php echo $donnees['description'] ?>/></li>
+          	<img  src= <?php echo $donnees['chemin'];?> alt=<?php echo $donnees['imageTitles'] ?>/>
 <?php
     }
 ?>
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pixel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="../../Pixel/Assets/css/style.css">
+      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+  </head> -->
 
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="../Assets/style.css">
-	<title>Document</title>
-	</head>
 	<body>
 
 
@@ -122,8 +121,9 @@
 	<script src="https://masonry.desandro.com/masonry.pkgd.js"></script>
 	<script src="https://imagesloaded.desandro.com/imagesloaded.pkgd.js"></script>
 
-	  <script type="text/javascript" src="home.js">
+	  <script type="text/javascript" src="../../Pixel/Assets/js/home.js"></script>
+		<script type="text/javascript" src="../../Pixel/Assets/js/app_images.js"></script>
 
-	</script>
+		<script type="text/javascript" src="../../Pixel/Assets/js/app.js"></script>
 	</body>
 	</html>

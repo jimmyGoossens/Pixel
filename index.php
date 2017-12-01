@@ -1,7 +1,8 @@
 <?php
 
-include 'Views/header.php';
-include 'Views/head.html';
+ include 'Views/header.php';
+ include 'Views/head.php';
+
 
 require 'model/class_PDO.php';
 require 'Controller/controller.php';
@@ -23,22 +24,25 @@ switch ($action) {
         $controller->getLoginPage();
       break;
     case 'getHomePage':
-      $controller->getHomePage();
+        $controller->getHomePage();
       break;
     case 'getaddAnImagePage':
-      $controller->getaddAnImagePage();
+        $controller->getaddAnImagePage();
       break;
     case 'get404Page':
-     $controller->get404Page();
+        $controller->get404Page();
      break;
     case 'default' :
-     $controller->getWelcomePage();
-     break;
-    case 'getRegisterUser':
-     $controller->getRegisterUser();
+        $controller->getWelcomePage();
         break;
+    case 'getRegisterUser':
+        $controller->getRegisterUser();
+        break;
+    case 'getLoginUser':
+         $controller->getLoginUser();
+            break;
     case 'getaddAnImageUser':
-     $controller->getaddAnImageUser();
+        $controller->getaddAnImageUser();
         break;
 }
  ?>

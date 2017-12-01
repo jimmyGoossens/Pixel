@@ -14,10 +14,10 @@
     <div class="main">
       <h1>Add an image</h1>
       <div class="mainContent">
-        <form class="addAnImage" action="index.php?action=getaddAnImageUser" method="post" enctype="multipart/form-data" onsubmit="return checkAddImageForm(this)">
+        <form class="addAnImage" action="index.php?action=getaddAnImageUser" method="post" enctype="multipart/form-data">
           <div class="imageTitle">
             <label for="imageTitle">Title : </label>
-            <input type="text" name="imageTitle" id="imageTitle" onblur="checkTitle(this)"/>
+            <input type="text" name="imageTitle" id="imageTitle" />
           </div>
           <div class="imageText">
             <label for="imageText">Text : </label>
@@ -35,6 +35,5 @@
         </form>
       </div>
     </div>
-    <script type="text/javascript" src="../Assets/js/app.js"></script>
   </body>
     </html>

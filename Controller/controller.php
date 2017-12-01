@@ -33,31 +33,23 @@ class Controller
     }
     public function getRegisterUser()
     {
-        require "Controller/register.php";
+        $register= new pdoModel;
+        $register->insert();
+        header('location:index.php?action=getLoginPage');
     }
     public function getLoginUser()
     {
-        require "Controller/login.php";
+        require 'login.php';
+        // $login= new pdoModel;
+        // $login->select();
+        // header('location:index.php?action=getHomePage');
     }
     public function getaddAnImageUser()
     {
         $connectDB= new pdoModel;
         $connectDB->upload();
+        header('location:index.php?action=getHomePage');
     }
-
-    // public function login($pseudo, $password)
-    // {
-    //     if ($this->pdoModel->select($pseudo, $password)) {
-    //         header("location:index.php?action=getRegisterUser");
-    //     } else {
-    //         header("location:index.php?action=getWelcomePage");
-    //     }
-    // }
-    // public function register($pseudo, $password, $email)
-    // {
-    //     $this->pdoModel->insert($pseudo, $password, $email);
-    //     header("location:index.php?action=getRegisterPage");
-    // }
 
 }
 

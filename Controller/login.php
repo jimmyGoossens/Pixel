@@ -6,8 +6,8 @@ if(isset($_POST['valider'])){
 
 
 	global $bdd;
-	require('model/class_PDO.php');
-	$login = new pdoModel($bdd);
+	// require('model/class_PDO.php');
+	$login = new pdoModel;
 
 	$validation = $login->select();
 	echo $validation;
@@ -16,8 +16,8 @@ if(isset($_POST['valider'])){
 	if(!empty($validation)){
 		echo "bordel";
 		session_start();
-		$_SESSION['id']= $validation;
-	 	header('location:home.php');
+		$_SESSION['ID']= $validation;
+	 	header('location:index.php?action=getHomePage');
 
 	}else{
 

@@ -3,8 +3,8 @@
 
 		require("model/class_PDO.php");
 		$del=new pdoModel($bdd);
-		$_POST['imgName'];
+		$_POST['imageTitle'];
 		$del->delete();
-		header("location:index.php?action=UserController@getSignup");
+		header("location:index.php?action=getHomePage");
 	}
 ?>
